@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
-import { useAuth } from "./AuthContext"; // Імпорт AuthContext для доступу до даних користувача
+import { useAuth } from "./AuthContext"; 
 
 const PurchaseHistoryContext = createContext();
 
@@ -9,7 +9,7 @@ export const PurchaseHistoryProvider = ({ children }) => {
     const [purchaseHistory, setPurchaseHistory] = useState([]);
     const [isLoadingHistory, setIsLoadingHistory] = useState(false);
     const [errorHistory, setErrorHistory] = useState(null);
-    const { currentUser } = useAuth(); // Отримуємо currentUser, який повинен містити email
+    const { currentUser } = useAuth(); // currentUser, який повинен містити email
 
     const fetchPurchaseHistory = useCallback(async () => {
         if (currentUser?.email) {
@@ -23,7 +23,7 @@ export const PurchaseHistoryProvider = ({ children }) => {
                 );
                 if (response.ok) {
                     const data = await response.json();
-                    // Сортуємо отримані дані за датою покупки у спадному порядку (від нових до старих)
+                    //  (від нових до старих)
                     const sortedData = data.sort((a, b) => new Date(b.purchaseDate) - new Date(a.purchaseDate));
                     setPurchaseHistory(sortedData);
                 } else {

@@ -1,0 +1,139 @@
+/* navbar.css */
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #6a1b9a, #2196f3);
+}
+
+.navbar-container {
+  max-width: 7xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #e5e5e5;
+}
+
+/* Auth buttons */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auth-button {
+  background-color: #34d399;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.auth-button:hover {
+  background-color: #059669;
+}
+
+.auth-button-logout {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.auth-button-logout:hover {
+  background-color: #dc2626;
+}
+
+/* Search bar */
+.search-wrapper {
+  background-color: #1f2937;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.search-container {
+  max-width: 7xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  border-radius: 0.375rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0.75rem;
+  background-color: #4b5563;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.search-button:hover {
+  background-color: #6b7280;
+}
+
+/* Icon buttons */
+.icon-buttons {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+}
+
+.icon-button:hover {
+  color: #e5e5e5;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-icon-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #fb923c;
+  color: white;
+  text-align: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+}

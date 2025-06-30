@@ -1,0 +1,29 @@
+{
+  "heroSlider": [
+    {
+      "id": 1,
+      "title": "Відкрийте нашу нову колекцію",
+      "subtitle": "Оновіть свій  простір з нашими новинками",
+      "image": "https://www.caravan.kz/wp-content/uploads/2024/12/0e7ff8a5-a341-43e1-a84b-320b54eda192.webp",
+      "link": "/new-arrivals",
+      "buttonText": "Переглянути"
+    },
+    {
+      "id": 2,
+      "title": "Літній розпродаж",
+      "subtitle": "Знижки до 50% на обрані товари",
+      "image": "./img/Hero_Slider/images/2.jpg",
+  
+      "buttonText": "Забрати пропозицію"
+    },
+    {
+      "id": 3,
+      "title": "Комфорт і стиль",
+      "subtitle": "Відчуйте ідеальне поєднання комфорту та елегантності",
+      "image": "https://sport-opt.by/wp-content/uploads/2022/03/sport-composition-in-minimal-style-1024x683.jpg",
+      "link": "/new-arrivals",
+      "buttonText": "Оглянути колекцію"
+    }
+
+  ]
+}

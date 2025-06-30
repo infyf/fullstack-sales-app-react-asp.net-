@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";  // Додано useParams для отримання параметра з URL
+import { useNavigate, useParams } from "react-router-dom";  
 import { Heart, ShoppingCart } from "lucide-react";
 import { useWishlist } from "../../components/context/WishlistContext";
 import { useCart } from "../../components/context/CartContext";
 
 const ProductGrid = ({ searchQuery }) => {
-  const { categoryId } = useParams(); // Отримуємо categoryId з URL
+  const { categoryId } = useParams();
   const navigate = useNavigate();
   const [products, setProducts] = React.useState([]);
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
@@ -19,7 +19,7 @@ const ProductGrid = ({ searchQuery }) => {
   }, []); 
 
   const filteredProducts = products.filter((product) => {
-    // Фільтрація продуктів за категорією та запитом пошуку
+    // Фільтр
     const matchesCategory = categoryId ? product.cat_id === parseInt(categoryId) : true;
     const matchesSearchQuery = searchQuery ? product.name.toLowerCase().includes(searchQuery.toLowerCase()) : true;
     return matchesCategory && matchesSearchQuery;

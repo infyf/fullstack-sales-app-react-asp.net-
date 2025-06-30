@@ -10,7 +10,7 @@
     animation: fadeInSidebar 0.5s ease-in-out;
   }
   
-  /* Заголовок "Категорії" */
+
   .sidebar h2 {
     font-size: 22px;
     font-weight: 700;
@@ -20,7 +20,7 @@
     animation: slideInDown 0.6s ease-in-out;
   }
   
-  /* Назви категорій */
+
   .sidebar h3 {
     font-size: 18px;
     font-weight: 600;
@@ -29,19 +29,19 @@
     animation: slideInLeft 0.6s ease-in-out;
   }
   
-  /* Список */
+
   .linkList {
     list-style: none;
     padding: 0;
     margin: 0 0 16px 0;
   }
   
-  /* Елементи списку */
+
   .linkItem {
     margin-bottom: 6px;
   }
   
-  /* Посилання */
+
   .linkItem a {
     text-decoration: none;
     color: #e0e0e0;
@@ -53,7 +53,7 @@
     animation: fadeInItem 0.4s ease-in-out;
   }
   
-  /* Підсвічування при наведенні */
+
   .linkItem a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffa726;
@@ -61,11 +61,11 @@
   }
   
   .linkItem a:active {
-    transform: scale(0.98); /* ефект натискання */
+    transform: scale(0.98); 
     color: #ff9800;
   }
   
-  /* Анімації */
+
   @keyframes fadeInSidebar {
     0% {
       opacity: 0;
@@ -110,7 +110,7 @@
     }
   }
   
-  /* Адаптивність */
+
   @media (max-width: 768px) {
     .sidebar {
       max-width: 100%;

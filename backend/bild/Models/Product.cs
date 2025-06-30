@@ -14,7 +14,7 @@ namespace bild.Models
         public int id_cat { get; set; }
 
         public string Name { get; set; }
-        public int Quantity { get; set; } // Додано властивість Quantity
+        public int Quantity { get; set; } 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
         public string Description { get; set; }
@@ -24,7 +24,7 @@ namespace bild.Models
         public string Weight { get; set; }
         public string Type { get; set; }
 
-        // Навігаційна властивість
+       
         public Category Category { get; set; }
 
         // Навігаційна властивість для PurchaseHistory

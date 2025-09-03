@@ -1,6 +1,4 @@
-/* navbar.css */
 
-/* Navbar */
 .navbar {
   background: linear-gradient(to right, #6a1b9a, #2196f3);
 }
@@ -41,7 +39,7 @@
   color: #e5e5e5;
 }
 
-/* Auth buttons */
+
 .auth-buttons {
   display: flex;
   gap: 1rem;
@@ -111,7 +109,6 @@
   background-color: #6b7280;
 }
 
-/* Icon buttons */
 .icon-buttons {
   display: flex;
   gap: 1.5rem;
